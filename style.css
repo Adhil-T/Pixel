@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+}
+
+nav {
+    height: 10vh;
+}
+
+.logo-designer {
+    color: #63331c;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.welcome-intro {
+    width: 100%;
+    height: 80vh;
+    background-color: cadetblue;
+    background-image: url("pexels-arthouse-studio-4344544.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.welcome-text {
+    width: fit-content;
+    height: fit-content;
+}
+
+.welcome-text span {
+    font-family: 'Concert One', sans-serif;
+}
+
+.catering-ad {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+
+.catering-promo {
+    width: 600px;
+    height: fit-content;
+}
+
+.catering-promo-img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.catering-promo span {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 17px;
+}
+
+.catering-promo a {
+    color: #212529;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.subscription-ad {
+    width: 100%;
+    height: 70vh;
+    background-image: url("pexels-quark-studio-2506993.jpg");
+    background-size: cover;
+    font-family: 'Concert One', sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.subscription-ad h3 {
+    font-size: 20px;
+}
+
+.subscription-ad h1 {
+    font-size: 60px;
+}
+
+.subscription-ad h3 a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.subscription-text {
+    height: fit-content;
+}
+
+.explore-designer {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    font-family: 'Amatic SC', sans-serif;
+    color: white;
+}
+
+.footer-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.footer-sub-left {
+    width: 50%;
+    height: 100%;
+    background-color: #63331c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-sub-left p {
+    font-size: 25px;
+}
+
+.footer-sub-right {
+    width: 50%;
+    height: 100%;
+    background-color: #63331c;
+}
+
+.footer-sub-right i {
+    font-size: 20px;
+}
+
+.footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sub-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.footer-in-left {
+    width: 50%;
+    height: 100%;
+    background-color: #63331c;
+}
+
+.footer-in-left a, .footer-in-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-in-right {
+    width: 50%;
+    height: 100%;
+    background-color: #63331c;
+}
+
+.footer-sub-bottom {
+    width: 100%;
+    height: 40%;
+    background-color: #63331c;
+    padding-top: 40px;
+}
+
+.message-index {
+    width: 550px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+.message-index::placeholder {
+    font-size: 20px;
+    color: white;
+}
+
+.message-index-send {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: #63331c;
+    border: none;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 450px){
+    .catering-ad {
+        flex-direction: column;
+    }
+
+    .catering-promo {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    .footer-left {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .footer-sub-left {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .footer-sub-right {
+        width: 100%;
+        height: fit-content;  
+    }
+    
+    .footer-right {
+        width: 100%;
+    }
+    
+    .message-index {
+        width: 70%;
+    }
+       
+    .message-index-send {
+        width: 29%;
+    }
+
+    .footer-sub-top {
+        height: 75%;
+    }
+
+    .footer-sub-bottom {
+        height: 25%;
+    }
+
+    .subscription-ad h3 {
+        font-size: 15px;
+    }
+    
+    .subscription-ad h1 {
+        font-size: 40px;
+    }
+
+    .footer-sub-bottom {
+        padding-top: 15px;
+    }
+
+}
+
+.products {
+    width: 100%;
+    height: fit-content;
+}
+
+.products h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+.products-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.product-item {
+    width: 20%;
+    margin: 10px;
+    height: fit-content;
+}
+
+.product-item img {
+    width: 100%;
+}
+
+.product-item span {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.p-name {
+    font-size: 25px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 450px){
+    .product-item {
+        width: 40%;
+    }
+}
+
+.subscription-page-intro {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 3rem;
+}
+
+.subscription-page-background {
+    background-image: url("pexels-lisa-fotios-1833399.jpg");
+    background-size: cover;
+}
+
+.catering-page-background {
+    background-image: url("pexels-ibrahim-boran-903415.jpg");
+    background-size: cover;
+}
+
+.career-page-background {
+    background-image: url("pexels-andrea-piacquadio-789822.jpg");
+    background-size: cover;
+}
+
+.subscription-page-intro-text {
+    font-size: 50px;
+}
+
+.subscription-desc {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 200px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.sub-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.sub-button button {
+    padding: 5px 15px;
+    background-color: #63331c;
+    border: none;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.features-in-sec {
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    padding: 90px 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-in-sec-reverse {
+    flex-direction: row-reverse;
+}
+
+.features-in-sec-img {
+    width: 30%;
+    height: 100%;
+}
+
+.features-in-sec-img-1 {
+    background-image: url("subscription features/pexels-mariam-antadze-10026601.jpg");
+    background-size: cover;
+}
+
+.features-in-sec-img-2 {
+    background-image: url("subscription features/pexels-mariam-antadze-10026524.jpg");
+    background-size: cover;
+}
+
+.features-in-sec-img-3 {
+    background-image: url("subscription features/pexels-ketut-subiyanto-4350055.jpg");
+    background-size: cover;
+}
+
+.catering-in-sec-img-1 {
+    background-image: url("catering features/pexels-cottonbro-studio-4255387.jpg");
+    background-size: cover;
+}
+
+.catering-in-sec-img-2 {
+    background-image: url("catering features/pexels-luke-barky-2947366.jpg");
+    background-size: cover;
+}
+
+.catering-in-sec-img-3 {
+    background-image: url("catering features/pexels-nicole-michalou-5778899.jpg");
+    background-size: cover;
+}
+
+.career-in-sec-img-1 {
+    background-image: url("career features/pexels-namzy-15105318.jpg");
+    background-size: cover;
+}
+
+.career-in-sec-img-2 {
+    background-image: url("career features/pexels-yan-krukau-8867475.jpg");
+    background-size: cover;
+}
+
+.career-in-sec-img-3 {
+    background-image: url("career features/pexels-vladislav-anchuk-19420186.jpg");
+    background-size: cover;
+}
+
+.features-in-sec-content {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.features-in-sec-content h2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contact-z1 {
+    width: 100%;
+    height: 80vh;
+    padding: 90px 200px;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+}
+
+.contact-z2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-image {
+    width: 40%;
+    height: 100%;
+    background-image: url("pexels-julie-aagaard-2467287.jpg");
+    background-size: cover;
+}
+
+.contact-contact {
+    width: 60%;
+    height: 100%;
+    padding: 20px 50px;
+}
+
+.contact-contact h2 {
+    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contact-contact span {
+    font-size: 14px;
+    color: grey;
+}
+
+.input {
+    margin: 15px 0;
+}
+
+.contact-contact input {
+    padding: 5px 0;
+    width: 100%;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: black; 
+}
+
+.contact-contact textarea {
+    padding: 5px 0;
+    width: 100%;
+    height: 100px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: black; 
+}
+
+.contact-contact input::placeholder {
+    color: black;
+}
+
+.contact-contact textarea::placeholder {
+    color: black;
+}
+
+.hrr {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    display: none;
+}
+
+@media screen and (max-width:450px) {
+    .subscription-page-intro {
+        padding: 2rem;
+    }
+
+    .subscription-page-intro-text {
+        font-size: 30px;
+    }
+
+    .subscription-desc {
+        padding: 30px 50px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .sub-button {
+        margin-top: 20px;
+    }
+
+    .sub-button button {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .features-in-sec {
+        flex-direction: column;
+        padding: 10px 30px;
+        height: fit-content;
+        text-align: justify;
+    }
+
+    .features-in-sec-img {
+        width: 100%;
+        height: 250px;
+        margin: 15px 0;
+    }
+    
+    .features-in-sec-content {
+        width: 100%;
+        height: 55%;
+    }
+
+    .contact-z1 {
+        height: fit-content;
+        padding: 25px 30px;
+    }
+
+    .contact-z2 {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contact-contact {
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0;
+    }
+
+    .hrr {
+        display: block;
+    }
+}
